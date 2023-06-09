@@ -8,17 +8,11 @@
 <h3>Purpose:</h3>
 <p style="margin-left: 20px;text-align:justify">  Imagine you are a security or defense analyst. Analyze the data and draw conclusions on the distribution and nature of terrorist incidents recorded around the world. In your analysis, include maps that visualize the location of different incidents. Your analysis may also provide answers to the following questions:
 </p>
-<p style="margin-left: 30px>• How has the number of terrorist activities changed over the years? Are there certain regions where this trend is different from the global averages?
-    <p style="margin-left: 30px>• Is the number of incidents and the number of casualties correlated? Can you spot any irregularities or outliers?
-    <p style="margin-left: 30px>• What are the most common methods of attacks? Does it differ in various regions or in time?
-    <p style="margin-left: 30px>• Plot the locations of attacks on a map to visualize their regional spread;
+<p style="margin-left: 30px>• How has the number of terrorist activities changed over the years? Are there certain regions where this trend is different from the global averages? </p>
+<p style="margin-left: 30px>• Is the number of incidents and the number of casualties correlated? Can you spot any irregularities or outliers?</p>
+<p style="margin-left: 30px>• What are the most common methods of attacks? Does it differ in various regions or in time?</p>
+<p style="margin-left: 30px>• Plot the locations of attacks on a map to visualize their regional spread;</p>
 					       
-<p style="margin-left: 20px">•  How many orders do we get each month? What month have the highest sales? Display in the form of a line chart. </p>
-<p style="margin-left: 20px">•  Are there peak hours? Display in bar plot form. </p>
-<p style="margin-left: 20px">•  What's the most ordered pizza? Compare order quantities on each type of pizza with a bar plot  </p>
-<p style="margin-left: 20px">•  What is the revenue contribution for each pizza size? Show in the form of a pie chart</p>
-<p style="margin-left: 20px">•  How is the revenue contribution for each type of pizza? Display in the form of bar plots, sorted from the highest contribution.</p>
-<p style="margin-left: 20px">•  What is the revenue in every month </p>
 <h3>Datas:</h3>
 <h4>Dataset:</h4>
 <p>In this project, it used 3 csv files, orders, order_details, and pizzas, that can be accessed in the following link:</p>
