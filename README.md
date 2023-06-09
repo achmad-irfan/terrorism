@@ -25,12 +25,16 @@
 <p> All files must be put in the same folder/directory as python </p>
 <h4>Data Validation</h4>
 <p style="margin-left: 30px"> All the data must be checked whetever there is blank data. The  queery for data checking blank data:</p>
-<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 30px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">import pandas as pd </p>
 <p style="margin-left: 20px">data= pd.read_csv("data.csv") </p>
 <p style="margin-left: 20px">data.isnull().sum()/len(data)*100</p>
 </div> 
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="Terror3.png" class="img-fluid" alt="">  
+</p>
 
 <h4>Data Duplicate Checking</h4>
 <p style="margin-left: 30px"> Code for data duplicate checking :</p>
