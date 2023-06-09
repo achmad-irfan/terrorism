@@ -1,13 +1,13 @@
 <p align="right"> <a href="https://achmadirfana.github.io/portofolio/portfolio-pizza-place.html">Back</a></p>
 
 
-<h2>  Global Terrorism</h2>
-<p> URL Dashoboard project : <a href="https://terrorism.onrender.com/">Pizza Places</a></p>
+<h2 align="center">  Global Terrorism</h2>
+<p> URL Dashoboard project : <a href="https://terrorism.onrender.com/">Global Terrorism</a></p>
 <h3> Background Project :</h3>
-<p> work as an analyst for the Pizza Place restaurant. My boss asked you to analyze the restaurant's performance in 2015 </p>
+<p> This is project from stratascratch with level medium category of difficulty </p>
 <h3>Purpose:</h3>
-<p style="margin-left: 20px;text-align:justify">  The main purpose is to provide a number of isnight and recomendation about the data. To do this,
-first I  need to identify the following data:</p>
+<p style="margin-left: 20px;text-align:justify">  Imagine you are a security or defense analyst. Analyze the data and draw conclusions on the distribution and nature of terrorist incidents recorded around the world. In your analysis, include maps that visualize the location of different incidents. Your analysis may also provide answers to the following questions:
+</p>
 <p style="margin-left: 20px">•  How many orders do we get each month? What month have the highest sales? Display in the form of a line chart. </p>
 <p style="margin-left: 20px">•  Are there peak hours? Display in bar plot form. </p>
 <p style="margin-left: 20px">•  What's the most ordered pizza? Compare order quantities on each type of pizza with a bar plot  </p>
