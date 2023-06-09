@@ -4,10 +4,15 @@
 <h2 align="center">  Global Terrorism</h2>
 <p> URL Dashoboard project : <a href="https://terrorism.onrender.com/">Global Terrorism</a></p>
 <h3> Background Project :</h3>
-<p> This is project from stratascratch with level medium category of difficulty </p>
+<p style="margin-left: 20px> This is project from stratascratch with level medium category of difficulty </p>
 <h3>Purpose:</h3>
 <p style="margin-left: 20px;text-align:justify">  Imagine you are a security or defense analyst. Analyze the data and draw conclusions on the distribution and nature of terrorist incidents recorded around the world. In your analysis, include maps that visualize the location of different incidents. Your analysis may also provide answers to the following questions:
 </p>
+<p style="margin-left: 30px>• How has the number of terrorist activities changed over the years? Are there certain regions where this trend is different from the global averages?
+    <p style="margin-left: 30px>• Is the number of incidents and the number of casualties correlated? Can you spot any irregularities or outliers?
+    <p style="margin-left: 30px>• What are the most common methods of attacks? Does it differ in various regions or in time?
+    <p style="margin-left: 30px>• Plot the locations of attacks on a map to visualize their regional spread;
+					       
 <p style="margin-left: 20px">•  How many orders do we get each month? What month have the highest sales? Display in the form of a line chart. </p>
 <p style="margin-left: 20px">•  Are there peak hours? Display in bar plot form. </p>
 <p style="margin-left: 20px">•  What's the most ordered pizza? Compare order quantities on each type of pizza with a bar plot  </p>
