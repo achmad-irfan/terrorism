@@ -10,8 +10,7 @@ from dash import html, dcc
 from dash.dependencies import Input, Output,State
 import dash_bootstrap_components as dbc
 import dash
-import country_converter as coco
-from flask import Flask
+
 
 
 # In[2]:
@@ -31,15 +30,13 @@ data= df[['eventid','suicide','success','iyear','imonth','country_txt','nkill',
 # In[4]:
 
 
-avea= data.groupby('iyear').count()['eventid'].reset_index()
-round(avea[avea['eventid']!=0].mean()['eventid'])
+
 
 
 # In[5]:
 
 
-data.loc[data['country_txt'] == 'West Germany (FRG)', 'country_txt'] = 'Germany'
-data.loc[data['country_txt'] == 'East Germany (GDR)', 'country_txt'] = 'Germany'
+
 
 
 # In[6]:
