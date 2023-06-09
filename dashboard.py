@@ -16,17 +16,12 @@ import dash
 # In[2]:
 
 
-app = dash.Dash(__name__)
-
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.CYBORG])
 
 # In[3]:
 
 
-df = pd.read_csv("globalterrorismdb_0718dist.tar.bz2", compression="bz2")
-data= df[['eventid','suicide','success','iyear','imonth','country_txt','nkill',
-          'gname','nperps','target1','natlty1_txt','weaptype1_txt','attacktype1_txt','latitude','longitude']]
-
-
+data = pd.read_csv('data.csv')
 # In[4]:
 
 
