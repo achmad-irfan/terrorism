@@ -40,8 +40,13 @@
 <p style="margin-left: 30px"> Code for data duplicate checking :</p>
 <div style="margin-left: 30px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-  <p style="margin-left: 20px">order.duplicated('order_id').any() #Checking whetevr any duplicate data in data order column order_id </p>
+  <p style="margin-left: 20px">data.duplicated('eventid').any() #Checking whetevr any duplicate data in data order column event_id </p>
 </div> 
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="Terror4.png" class="img-fluid" alt="">  
+</p>
 <h3>Dat Analyze</h3>
 <h4>1. Total Order per Month</h4>
 <p style="margin-left: 30px"> Code: </p>
