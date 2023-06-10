@@ -162,7 +162,6 @@
 <p style="margin-left: 40px"> • Based on data and graph, the greater the number of terrorism cases, the higher the number of victims, there were even a few months where the number of caucuses tended to be 'small, but caused a very large number of victims, namely September 2001 and March 2004.  </p>
 <p style="margin-left: 40px"> • The most common attack that used by terrorist is by bombing/explosion, especially in iraq ,pakistan, and afganishtan  </p>
 <p style="margin-left: 40px"> • In the 2000-2017 period, based on a data map of the number of cases of terrorism spreading throughout the world and most of them were in the country of Ukraine, no area was truly clean from the threat of terrorism.   </p>
-<h4 style="margin-left: 20px"> 5.2 Reccmendation</h4>
-<p style="margin-left: 40px;align=justify"> •Pizzas in sizes XL and XXL contribute very little to revenue, so to further maximize revenue 1-2 hours before closing, pizzas in XXL or XL can be scaled down to sizes S or L to increase the likelihood of being sold  <p>
+
 
 
