@@ -153,8 +153,8 @@
 <img src="Terror11.png" class="img-fluid" alt="">  
 </p>
 
-<h3>6. Insight and Recomendation</h3>
-<h4 style="margin-left: 20px">6.1 Insight</h4>
+<h3>5. Insight and Recomendation</h3>
+<h4 style="margin-left: 20px">5.1 Insight</h4>
 <p style="margin-left: 40px"> • Based on data and graph, the graph tends to inceease year by year from 2000-2014 and the reached its peak in 2014, but there are actually a number of countries whose trend tends to decrease, such as Uzbezkistan, Morocco, and Eritrea. 
  </p>
 <p style="margin-left: 40px"> • Based on data and graph, the greater the number of terrorism cases, the higher the number of victims, there were even a few months where the number of caucuses tended to be 'small, but caused a very large number of victims, namely September 2001 and March 2004.  </p>
