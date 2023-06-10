@@ -76,6 +76,34 @@
 <p align="center"> 
 <img src="Terror6.png" class="img-fluid" alt="">  
 </p>
+
+<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">total_terrorisme['iyear'] = [str(d) for d in total_terrorisme['iyear']]</p>
+<p style="margin-left: 20px">sns.lineplot(data=total_terrorisme,x=total_terrorisme['iyear'],y=total_terrorisme['eventid'])</p>
+<p style="margin-left: 20px">plt.xticks(rotation=90)</p>
+<p style="margin-left: 20px">plt.tight_layout()</p>
+<p style="margin-left: 20px">plt.title("Trend of Terrosim 2000-2017")</p>
+</div>
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="Terror6.png" class="img-fluid" alt="">  
+</p>
+
+<p style="margin-left: 30px"> From graph above, the trend of terrorisme is increase year by year, so to know which region/country that don't have the same trend , need to check the average of growth of terrorisme case from year to year.</p>
+<p style="margin-left: 30px"> The Code of average of growth of terrorisme case:</p>
+
+<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">data_detail= data.pivot_table(index='iyear',values='eventid',columns='country_txt',aggfunc='count')</p>
+<p style="margin-left: 20px">data_detail_growth= data_detail.pct_change(periods=1)*100</p>
+<p style="margin-left: 20px">data_detail_growth.mean(axis=0).reset_index().sort_values(0,ascending=True).head(9)</p>
+</div>
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="Terror7.png" class="img-fluid" alt="">  
+</p>
+
 <h4>2. Total Order per Hours</h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
@@ -92,10 +120,21 @@
 <p style="margin-left: 20px">plt.show </p>
 </div>
 
+
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
 <img src="no-2.png" class="img-fluid" alt="">  
 </p>
+
+
+
+
+
+
+
+<p style="margin-left: 20px">data_detail= data.pivot_table(index='iyear',values='eventid',columns='country_txt',aggfunc='count')</p>
+<p style="margin-left: 20px">data_detail_growth= data_detail.pct_change(periods=1)*100</p>
+<p style="margin-left: 20px">data_detail_growth.mean(axis=0).reset_index().sort_values(0,ascending=True).head(9)</p>
 
 <h4>3. Ranking Most of Popular Pizzas</h4>
 <p style="margin-left: 30px"> Code: </p>
