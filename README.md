@@ -131,7 +131,7 @@
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">attack= data.groupby(['country_txt','attacktype1_txt','iyear']).count()['eventid'].reset_index()</p>
-<p style="margin-left: 20px">px.treemap(data_frame=attack, path=['attacktype1_txt','country_txt','iyear'], values='eventid',title='Most Common Attack')</p	
+<p style="margin-left: 20px">px.treemap(data_frame=attack, path=['attacktype1_txt','country_txt','iyear'], values='eventid',title='Most Common Attack')</p>	
 <p style="margin-left: 20px">fig.update_traces(marker=dict(color='cyan')) </p>
 </div>
 
