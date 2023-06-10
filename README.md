@@ -1,4 +1,4 @@
-<p align="right"> <a href="https://achmadirfana.github.io/portofolio/portfolio-terrosism.html">Back</a></p>
+<p align="right"> <a href="https://achmadirfana.github.io/portofolio/portfolio-terrorism.html">Back</a></p>
 
 
 <h2 align="center">  Global Terrorism</h2>
