@@ -117,7 +117,7 @@ card_total_case = dbc.Card(
             html.P(id='jumlah-kasus', style={'font-size': '60px', 'text-align': 'center'}),
         ]
     ),
-    style={"width": "580px","height":'235px','margin-top':'20px','outline': '8px solid white'},
+    style={"width": "640px","height":'235px','margin-top':'20px','outline': '8px solid white'},
     id='cardstotalcase'
 )
 
@@ -133,7 +133,7 @@ card_average_case = dbc.Card(
             html.P(id='average-kasus', style={'font-size': '60px', 'text-align': 'center'}),
         ]
     ),
-    style={"width": "580px","height":'235px','margin-top':'20px','outline': '8px solid white'},
+    style={"width": "640px","height":'235px','margin-top':'20px','outline': '8px solid white'},
     id='cardaveragecase'
 )
 
@@ -149,7 +149,7 @@ card_average_victim = dbc.Card(
             html.P(id='totalvictim', style={'font-size': '60px', 'text-align': 'center'}),
         ]
     ),
-    style={"width": "580px","height":'235px','margin-top':'20px','outline': '8px solid white'},
+    style={"width": "640px","height":'235px','margin-top':'20px','outline': '8px solid white'},
     id='totalvictimkilled'
 )
 
