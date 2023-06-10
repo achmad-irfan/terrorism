@@ -48,23 +48,18 @@
 <img src="Terror4.png" class="img-fluid" alt="">  
 </p>
 <h3>Dat Analyze</h3>
-<h4>1. Total Order per Month</h4>
+<h4>1. Terrorist activities changed over the years and regions where this trend is different from the global averages</h4>
+<p tyle="margin-left: 30px"> The trend of terrorism over years </p>
 <p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-<p style="margin-left: 20px">order['date']=pd.to_datetime(order['date']) </p>
-<p style="margin-left: 20px">order['month']=order['date'].dt.strftime("%Y-%m") </p>
-<p style="margin-left: 20px">plt.figure(figsize=(11,4)) </p>
-<p style="margin-left: 20px">sns.lineplot(data=order.groupby('month')['order_id'].count().reset_index(),x='month',y='order_id') </p>
-<p style="margin-left: 20px">plt.title('Total Orders per Month') </p>
-<p style="margin-left: 20px">plt.ylabel('Total Transaction') </p>
-<p style="margin-left: 20px">plt.xlabel('Month') </p>
-<p style="margin-left: 20px">plt.show </p>
+<p style="margin-left: 20px">total_terrorisme = data.groupby('iyear').count()['eventid'].reset_index() </p>
+<p style="margin-left: 20px">total_terrorisme </p>
 </div>
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="no-1.png" class="img-fluid" alt="">  
+<img src="Terror5.png" class="img-fluid" alt="">  
 </p>
 
 <h4>2. Total Order per Hours</h4>
