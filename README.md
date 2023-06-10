@@ -1,4 +1,4 @@
-<p align="right"> <a href="https://achmadirfana.github.io/portofolio/portfolio-pizza-place.html">Back</a></p>
+<p align="right"> <a href="https://achmadirfana.github.io/portofolio/portfolio-terrosism.html">Back</a></p>
 
 
 <h2 align="center">  Global Terrorism</h2>
@@ -130,12 +130,14 @@
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-
+<p style="margin-left: 20px">attack= data.groupby(['country_txt','attacktype1_txt','iyear']).count()['eventid'].reset_index()</p>
+<p style="margin-left: 20px">px.treemap(data_frame=attack, path=['attacktype1_txt','country_txt','iyear'], values='eventid',title='Most Common Attack')</p	
+<p style="margin-left: 20px">fig.update_traces(marker=dict(color='cyan')) </p>
 </div>
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="no-3.png" class="img-fluid" alt="">  
+<img src="Terror10.png" class="img-fluid" alt="">  
 </p>
 
 <h4>4. Plot the locations of attacks on a map to visualize their regional spread</h4>
