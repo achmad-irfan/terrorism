@@ -144,13 +144,13 @@
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-<p style="margin-left: 20px">data_growth= data_detail_growth.mean(axis=0).reset_index()</p>
-<p style="margin-left: 20px">px.choropleth(data_frame=data_growth,locations='country_txt',color=0,locationmode='country names')</p>
+<p style="margin-left: 20px">data_per_country = data_detail_growth.mean(axis=0).reset_index()</p>
+<p style="margin-left: 20px">px.choropleth(data_per_country,locations=data_per_country['country_txt'],locationmode='country names',color=0,color_continuous_scale=['white','black'],facet_row_spacing=0.9999,title='Distribution of Total Terrosim Case 2000-2017')</p>
 </div>
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="Terror11.png" class="img-fluid" alt="">  
+<img src="map.png" class="img-fluid" alt="">  
 </p>
 
 <h3>5. Insight and Recomendation</h3>
