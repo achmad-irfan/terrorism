@@ -158,7 +158,7 @@
 <p style="margin-left: 40px"> • Based on data and graph, the graph tends to inceease year by year from 2000-2014 and the reached its peak in 2014, but there are actually a number of countries whose trend tends to decrease, such as Uzbezkistan, Morocco, and Eritrea. 
  </p>
 <p style="margin-left: 40px"> • Based on data and graph, the greater the number of terrorism cases, the higher the number of victims, there were even a few months where the number of caucuses tended to be 'small, but caused a very large number of victims, namely September 2001 and March 2004.  </p>
-<p style="margin-left: 40px"> • Pizzas with the chicken meat is the most sold pizzas  </p>
+<p style="margin-left: 40px"> • The most common attack that used by terrorist is by bombing/explosion, especially in iraq ,pakistan, and afganishtan  </p>
 <p style="margin-left: 40px"> • The business is stabil in 2015 based on income with the avarge of 5% growth or loss   </p>
 <h4 style="margin-left: 20px"> 6.2 Reccmendation</h4>
 <p style="margin-left: 40px;align=justify"> •Pizzas in sizes XL and XXL contribute very little to revenue, so to further maximize revenue 1-2 hours before closing, pizzas in XXL or XL can be scaled down to sizes S or L to increase the likelihood of being sold  <p>
