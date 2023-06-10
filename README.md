@@ -71,6 +71,7 @@
 <p style="margin-left: 20px">plt.xticks(rotation=90)</p>
 <p style="margin-left: 20px">plt.tight_layout()</p>
 <p style="margin-left: 20px">plt.title("Trend of Terrosim 2000-2017")</p>
+<p style="margin-left: 20px">plt.gca().set_facecolor('black') </p>
 </div>
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
@@ -94,7 +95,7 @@
 
 <h4>2. The correlation number of incidents and the number of casualties </h4>
 <p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:150px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">data_correlation = data.groupby(['iyear','imonth']).agg({'eventid': 'count', 'nkill': 'sum'}).reset_index()</p>
 <p style="margin-left: 20px">data_correlation['year-month']= data_correlation['iyear'].astype(str) +"-"+ data_correlation["imonth"].astype(str)</p>
@@ -114,29 +115,11 @@
 </p>
 
 
-
-
-
-
-
-<p style="margin-left: 20px">data_detail= data.pivot_table(index='iyear',values='eventid',columns='country_txt',aggfunc='count')</p>
-<p style="margin-left: 20px">data_detail_growth= data_detail.pct_change(periods=1)*100</p>
-<p style="margin-left: 20px">data_detail_growth.mean(axis=0).reset_index().sort_values(0,ascending=True).head(9)</p>
-
-<h4>3. Ranking Most of Popular Pizzas</h4>
+<h4>4. The most common methods of attacks?</h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-<p style="margin-left: 20px">data_merge = pd.merge(order_detail,pizzas,on='pizza_id') </p>
-<p style="margin-left: 20px">data_merge_quantity= data_merge.groupby('pizza_type_id')['quantity'].sum().reset_index() </p>
-<p style="margin-left: 20px">data_merge_quantity.to_csv('data_merge_quantity.csv',index=False) </p>
-<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
-<p style="margin-left: 20px">plt.xticks(rotation='vertical') </p>
-<p style="margin-left: 20px">sns.barplot(data=data_merge_quantity.sort_values('quantity', ascending=False),x='pizza_type_id',y='quantity') </p>
-<p style="margin-left: 20px">plt.title('Ranking Most of Popular Pizzas') </p>
-<p style="margin-left: 20px">plt.xlabel('Pizza Type') </p>
-<p style="margin-left: 20px">plt.ylabel('Total Orders') </p>
-<p style="margin-left: 20px">plt.show </p>
+
 </div>
 
 <p style="margin-left: 30px"> Output: </p>
@@ -144,63 +127,16 @@
 <img src="no-3.png" class="img-fluid" alt="">  
 </p>
 
-<h4>4. Revenue contribution by pizza size</h4>
+<h4>4. Plot the locations of attacks on a map to visualize their regional spread</h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-<p style="margin-left: 20px">data_merge['revenue']=data_merge['quantity']*data_merge['price'] </p>
-<p style="margin-left: 20px">data_merge_revenue= data_merge.groupby('size')['revenue'].sum().reset_index() </p>
-<p style="margin-left: 20px">data_merge_revenue.to_csv('data_merge_revenue.csv',index=False) </p>
-<p style="margin-left: 20px">size= data_merge_revenue['size'].tolist() </p>
-<p style="margin-left: 20px">revenue= data_merge_revenue['revenue'].tolist() </p>
-<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
-<p style="margin-left: 20px">plt.pie(revenue, labels=size,autopct='%1.1f%%') </p>
-<p style="margin-left: 20px">plt.title('Revenue Contribution by Pizza Size') </p>
-<p style="margin-left: 20px">plt.show </p>
+
 </div>
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
 <img src="no-4.png" class="img-fluid" alt="">  
-</p>
-
-<h4>5 Revenue contribution by pizza type¶e</h4>
-<p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
-	<p> </p>
-<p style="margin-left: 20px">data_merge_size= data_merge.groupby('pizza_type_id')['revenue'].sum().reset_index() </p>
-<p style="margin-left: 20px">data_merge_size.to_csv('data_merge_size.csv',index=False) </p>
-<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
-<p style="margin-left: 20px">plt.xticks(rotation='vertical') </p>
-<p style="margin-left: 20px">sns.barplot(data=data_merge_size.sort_values('revenue', ascending=False),x='pizza_type_id',y='revenue') </p>
-<p style="margin-left: 20px">plt.title('Revenue Contribution by Pizza Type') </p>
-<p style="margin-left: 20px">plt.xlabel('Pizza Type',) </p>
-<p style="margin-left: 20px">plt.ylabel('Revenue') </p>
-<p style="margin-left: 20px">plt.show </p>
-</div>
-
-<h4>6. Revenue Contribution by Month</h4>
-<p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
-	<p> </p>
-<p style="margin-left: 20px">data_merge_order_merge= pd.merge(order,data_merge, on='order_id') </p>
-<p style="margin-left: 20px">data_merge_revenue_month = data_merge_order_merge.groupby('month')['revenue'].sum().reset_index() </p>
-<p style="margin-left: 20px">data_merge_revenue_month.to_csv('data_merge_revenue_month.csv',index=False) </p>
-<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
-<p style="margin-left: 20px">plt.xticks(rotation='vertical') </p>
-<p style="margin-left: 20px">sns.barplot(data=data_merge_revenue_month,x='month',y='revenue') </p>
-<p style="margin-left: 20px">plt.title('Revenue Contribution by Month') </p>
-<p style="margin-left: 20px">plt.xlabel('Month',) </p>
-<p style="margin-left: 20px">plt.ylabel('Revenue') </p>
-<p style="margin-left: 20px">plt.show </p>
-![image](https://github.com/achmadirfana/pizza-places/assets/125809336/c662c678-0836-4889-93cb-5c208797113d)
-
-</div>
-
-
-<p style="margin-left: 30px"> Output: </p>
-<p align="center"> 
-<img src="no-6.png" class="img-fluid" alt="">  
 </p>
 
 <h3>6. Insight and Recomendation</h3>
