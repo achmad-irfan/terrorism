@@ -114,6 +114,17 @@
 <img src="Terror8.png" class="img-fluid" alt="">  
 </p>
 
+<p style="margin-left: 30px"> For searching the outlier in the data, it must be calculated the gradient of the chart, code for searching the gradient of data: </p>
+<div style="margin-left: 50px;height:150px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">data_correlation['gradien']=data_correlation['nkill']/data_correlation['eventid'] </p>
+<p style="margin-left: 20px"> data_correlation.sort_values('gradien',ascending=False).head(2) </p>
+</div>
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="Terror9.png" class="img-fluid" alt="">  
+</p>
 
 <h4>4. The most common methods of attacks?</h4>
 <p style="margin-left: 30px"> Code: </p>
