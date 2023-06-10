@@ -144,7 +144,7 @@
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-p style="margin-left: 20px">data_growth= data_detail_growth.mean(axis=0).reset_index()</p>
+<p style="margin-left: 20px">data_growth= data_detail_growth.mean(axis=0).reset_index()</p>
 <p style="margin-left: 20px">px.choropleth(data_frame=data_growth,locations='country_txt',color=0,locationmode='country names')</p>
 </div>
 
@@ -155,8 +155,9 @@ p style="margin-left: 20px">data_growth= data_detail_growth.mean(axis=0).reset_i
 
 <h3>6. Insight and Recomendation</h3>
 <h4 style="margin-left: 20px">6.1 Insight</h4>
-<p style="margin-left: 40px"> • Based on data, time around lunch and dinner is the time with the most oder of pizzas</p>
-<p style="margin-left: 40px"> • More than 75% income  is the from pizza with the M and S size  </p>
+<p style="margin-left: 40px"> • Based on data and graph, the graph tends to inceease year by year from 2000-2014 and the reached its peak in 2014, but there are actually a number of countries whose trend tends to decrease, such as Uzbezkistan, Morocco, and Eritrea. 
+ </p>
+<p style="margin-left: 40px"> • Based on data and graph, the greater the number of terrorism cases, the higher the number of victims, there were even a few months where the number of caucuses tended to be 'small, but caused a very large number of victims, namely September 2001 and March 2004.  </p>
 <p style="margin-left: 40px"> • Pizzas with the chicken meat is the most sold pizzas  </p>
 <p style="margin-left: 40px"> • The business is stabil in 2015 based on income with the avarge of 5% growth or loss   </p>
 <h4 style="margin-left: 20px"> 6.2 Reccmendation</h4>
