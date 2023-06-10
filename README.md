@@ -49,7 +49,7 @@
 </p>
 <h3>Dat Analyze</h3>
 <h4>1. Terrorist activities changed over the years and regions where this trend is different from the global averages</h4>
-<p tyle="margin-left: 30px"> The trend of terrorism over years </p>
+<p style="margin-left: 30px"> The trend of terrorism over years </p>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
@@ -62,6 +62,13 @@
 <img src="Terror5.png" class="img-fluid" alt="">  
 </p>
 
+<p style="margin-left: 30px"> The trend of terrorism over years by line chart</p>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">total_terrorisme = data.groupby('iyear').count()['eventid'].reset_index() </p>
+<p style="margin-left: 20px">total_terrorisme </p>
+</div>
 <h4>2. Total Order per Hours</h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
