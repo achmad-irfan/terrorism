@@ -75,7 +75,7 @@
 </div>
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="Terror6.png" class="img-fluid" alt="">  
+<img src="line.png" class="img-fluid" alt="">  
 </p>
 
 
@@ -111,7 +111,7 @@
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="Terror8.png" class="img-fluid" alt="">  
+<img src="scatter.png" class="img-fluid" alt="">  
 </p>
 
 <p style="margin-left: 30px"> For searching the outlier in the data, it must be calculated the gradient of the chart, code for searching the gradient of data: </p>
@@ -126,7 +126,7 @@
 <img src="Terror9.png" class="img-fluid" alt="">  
 </p>
 
-<h4>4. The most common methods of attacks?</h4>
+<h4>3. The most common methods of attacks?</h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
@@ -137,7 +137,7 @@
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="Terror10.png" class="img-fluid" alt="">  
+<img src="treemap.png" class="img-fluid" alt="">  
 </p>
 
 <h4>4. Plot the locations of attacks on a map to visualize their regional spread</h4>
