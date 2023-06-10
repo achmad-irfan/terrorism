@@ -77,23 +77,11 @@
 <img src="Terror6.png" class="img-fluid" alt="">  
 </p>
 
-<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
-	<p> </p>
-<p style="margin-left: 20px">total_terrorisme['iyear'] = [str(d) for d in total_terrorisme['iyear']]</p>
-<p style="margin-left: 20px">sns.lineplot(data=total_terrorisme,x=total_terrorisme['iyear'],y=total_terrorisme['eventid'])</p>
-<p style="margin-left: 20px">plt.xticks(rotation=90)</p>
-<p style="margin-left: 20px">plt.tight_layout()</p>
-<p style="margin-left: 20px">plt.title("Trend of Terrosim 2000-2017")</p>
-</div>
-<p style="margin-left: 30px"> Output: </p>
-<p align="center"> 
-<img src="Terror6.png" class="img-fluid" alt="">  
-</p>
 
 <p style="margin-left: 30px"> From graph above, the trend of terrorisme is increase year by year, so to know which region/country that don't have the same trend , need to check the average of growth of terrorisme case from year to year.</p>
 <p style="margin-left: 30px"> The Code of average of growth of terrorisme case:</p>
 
-<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:150px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">data_detail= data.pivot_table(index='iyear',values='eventid',columns='country_txt',aggfunc='count')</p>
 <p style="margin-left: 20px">data_detail_growth= data_detail.pct_change(periods=1)*100</p>
@@ -104,26 +92,25 @@
 <img src="Terror7.png" class="img-fluid" alt="">  
 </p>
 
-<h4>2. Total Order per Hours</h4>
+<h4>2. The correlation number of incidents and the number of casualties </h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
-<p style="margin-left: 20px">order['time']=pd.to_datetime(order['time']) </p>
-<p style="margin-left: 20px">order['hours']=order['time'].dt.strftime("%H") </p>
-<p style="margin-left: 20px">order_hour= order.groupby('hours')['order_id'].count().reset_index() </p>
-<p style="margin-left: 20px">order_hour.to_csv('order_hour.csv',index=False) </p>
-<p style="margin-left: 20px">plt.figure(figsize=(8,4)) </p>
-<p style="margin-left: 20px">sns.barplot(data=order_hour, x='hours', y='order_id') </p>
-<p style="margin-left: 20px">plt.title('Orders by Hours') </p>
-<p style="margin-left: 20px">plt.xlabel('Hours') </p>
-<p style="margin-left: 20px">plt.ylabel('Total Transaction') </p>
-<p style="margin-left: 20px">plt.show </p>
+<p style="margin-left: 20px">data_correlation = data.groupby(['iyear','imonth']).agg({'eventid': 'count', 'nkill': 'sum'}).reset_index()</p>
+<p style="margin-left: 20px">data_correlation['year-month']= data_correlation['iyear'].astype(str) +"-"+ data_correlation["imonth"].astype(str)</p>
+<p style="margin-left: 20px">data_correlation['nkill'] = [round(d) for d in data_correlation['nkill']]</p>
+<p style="margin-left: 20px">plt.figure(figsize=(10, 8),)</p>
+<p style="margin-left: 20px">sns.scatterplot(data=data_correlation,x='eventid',y='nkill')</p>
+<p style="margin-left: 20px">plt.title('Correlation Between Number of Case and Number of Victims')</p>
+<p style="margin-left: 20px">plt.xlabel('Number of Case')</p>
+<p style="margin-left: 20px">plt.ylabel('Total Victims')</p>
+<p style="margin-left: 20px">plt.gca().set_facecolor('black')</p>
 </div>
 
 
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
-<img src="no-2.png" class="img-fluid" alt="">  
+<img src="Terror8.png" class="img-fluid" alt="">  
 </p>
 
 
