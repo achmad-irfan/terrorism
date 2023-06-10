@@ -142,10 +142,12 @@
 
 <h4>4. Plot the locations of attacks on a map to visualize their regional spread</h4>
 <p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:180px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:120px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">data_per_country = data_detail_growth.mean(axis=0).reset_index()</p>
-<p style="margin-left: 20px">px.choropleth(data_per_country,locations=data_per_country['country_txt'],locationmode='country names',color=0,color_continuous_scale=['white','black'],facet_row_spacing=0.9999,title='Distribution of Total Terrosim Case 2000-2017')</p>
+<p style="margin-left: 20px">px.choropleth(data_per_country,locations=data_per_country['country_txt'],</p>
+<p style="margin-left: 50px">locationmode='country names',color=0,color_continuous_scale=['white','black'], </p>	
+<p style="margin-left: 50px">facet_row_spacing=0.9999,title='Distribution of Total Terrosim Case 2000-2017') </p>
 </div>
 
 <p style="margin-left: 30px"> Output: </p>
@@ -159,8 +161,8 @@
  </p>
 <p style="margin-left: 40px"> • Based on data and graph, the greater the number of terrorism cases, the higher the number of victims, there were even a few months where the number of caucuses tended to be 'small, but caused a very large number of victims, namely September 2001 and March 2004.  </p>
 <p style="margin-left: 40px"> • The most common attack that used by terrorist is by bombing/explosion, especially in iraq ,pakistan, and afganishtan  </p>
-<p style="margin-left: 40px"> • The business is stabil in 2015 based on income with the avarge of 5% growth or loss   </p>
-<h4 style="margin-left: 20px"> 6.2 Reccmendation</h4>
+<p style="margin-left: 40px"> • In the 2000-2017 period, based on a data map of the number of cases of terrorism spreading throughout the world and most of them were in the country of Ukraine, no area was truly clean from the threat of terrorism.   </p>
+<h4 style="margin-left: 20px"> 5.2 Reccmendation</h4>
 <p style="margin-left: 40px;align=justify"> •Pizzas in sizes XL and XXL contribute very little to revenue, so to further maximize revenue 1-2 hours before closing, pizzas in XXL or XL can be scaled down to sizes S or L to increase the likelihood of being sold  <p>
-<p style="margin-left: 40px;align=justify"> •	Make sure the stock of chicken meat is always available because pizza with chicken meat sells very well compared to other flavors/toppings  <p>
+
 
